@@ -18,7 +18,7 @@ let addSuggest=function(obj){
      button.setAttribute("id",""+obj.id);
      let favourites=JSON.parse(localStorage.getItem("favourites")); 
 
-    if((favourites!=null&&favourites.includes(obj.id)){
+    if(favourites!=null&&favourites.includes(obj.id)){
             button.innerHTML="Remove From Favourites";
             button.classList.add("bg-red");
             button.classList.add("remove-from-Fav");
